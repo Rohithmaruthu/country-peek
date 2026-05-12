@@ -8,13 +8,13 @@ function Header() {
         //    - nav element, className="header__nav"
         //      - Link to "/" — Home
         //      - Link to "/favourites" — Favourites
-        <div className="header">
+        <header className="header">
             <Link to="/" className="header__brand">CountryPeek</Link>
             <nav className="header__nav">
                 <Link className="header__nav__link" to="/">Home</Link>
                 <Link className="header__nav__link" to="/favourites">Favourites</Link>
             </nav>
-        </div>
+        </header>
     )
 }
 
