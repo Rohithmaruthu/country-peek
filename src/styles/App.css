@@ -1,0 +1,105 @@
+/* src/styles/App.css */
+
+/* .header — flex, space-between, align center, padding, blue bg, white text */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* .header__brand — larger bold text */
+.header__brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* .header__nav — flex with gap between links, semi-bold */
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
+/* .search-bar — padding to offset it from the header */
+.search-bar {
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .search-bar__input — full width up to ~480px, padding, border, border-radius */
+.search-bar input,
+.search-bar__input {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* .home — padding and flex centering */
+.home {
+  padding: 1rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-list {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 1rem;
+}
+
+.country-list p {
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.country-list p:hover {
+  border-color: #2563eb;
+  background-color: #f0f7ff;
+}
+
+/* .home__placeholder — muted color, top margin */
+.home__placeholder {
+  color: #6b7280;
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 480px;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 3rem;
+  max-width: 480px;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.not-found a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
